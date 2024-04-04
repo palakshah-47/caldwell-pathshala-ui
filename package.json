@@ -1,0 +1,15 @@
+{
+  "name": "caldwell-pathshala-ui",
+  "version": "1.0.0",
+  "description": "Frontend for caldwell pathshala",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss -i src/styles.css -o public/styles.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
+
