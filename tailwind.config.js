@@ -25,8 +25,8 @@ module.exports = {
         ],
       },
       fontSize: {
-        titleclamp: 'clamp(1rem, 1.5vw, 2.5rem)',
-        subtitleclamp: 'clamp(1rem, 0.5vw, 2rem)',
+        titleclamp: 'clamp(1rem, 1.5vw, 5rem)',
+        subtitleclamp: 'clamp(1rem, 0.5vw, 5rem)',
       },
       fontColor: {
         body: '#696969',

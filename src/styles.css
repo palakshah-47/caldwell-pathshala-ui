@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header {
+  @apply ml-6 mt-2 mb-2 p-0 text-hearderText border-none leading-normal font-thin w-full text-titleclamp sm:text-3xl;
+}
+.btn {
+  @apply py-2 px-4 mr-2 leading-5 text-hearderText hover:text-white bg-transparent font-medium rounded-md text-subtitleclamp sm:text-2xl;
+}
+.link {
+  @apply bg-linkBackGround border-link border-solid border text-linkText leading-4 pl-3 pt-1 pr-3 pb-1 whitespace-nowrap hover:bg-hoverLinkBackGround hover:text-linkHover font-thin;
+}
+.subLink {
+  @apply block px-2 py-1 text-subtitleclamp sm:text-2xl;
+}
+.disclaimer {
+  @apply flex pt-1 pb-1 pl-2 bg-orange-300 min-w-full justify-normal font-bold text-xs text-hearderText;
+}
