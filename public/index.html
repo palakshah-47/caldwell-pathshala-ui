@@ -6,14 +6,14 @@
     <title>CaldWell Pathshala</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="font-body bg-body text-base sm:text-2xl">
+  <body class="font-body bg-body text-base">
     <div
-      class="flex flex-col min-h-screen min-w-max border-gray-700 border-solid"
+      class="flex flex-col min-h-screen min-w-min border-gray-700 border-solid"
     >
       <nav class="flex bg-headerBackGround m-0 justify-between">
         <div class="flex justify-between items-center w-full">
           <div class="flex flex-row w-full bg-header m-0 p-0">
-            <a class="flex flex-auto max-w-max" href="/">
+            <a class="flex flex-auto h-fit max-w-max flex-shrink-0" href="/">
               <img
                 class="w-14"
                 src="assets/images/caldwell pathshala.jpg"
@@ -25,144 +25,159 @@
                 <h1 class="header">Caldwell Pathshala</h1>
 
                 <div class="flex flex-row items-center justify-end w-full">
+                  <div class="block px-4 cursor-pointer md:hidden" id="burger">
+                    <svg
+                      class="w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="{1.5}"
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                      />
+                    </svg>
+                  </div>
                   <a class="btn" href="#">Log In</a
                   ><a class="btn" href="#">Change Password</a>
                 </div>
               </div>
-              <div class="flex flex-row">
-                <ul
-                  class="flex pt-1 pb-1 pl-0.5 bg-orange-300 w-full justify-start"
-                >
-                  <li class="link">
-                    <a href="#" class="text-subtitleclamp sm:text-2xl"
-                      >About Us</a
+              <!-- <div class="hidden md:flex flex-row"> -->
+              <ul
+                class="hidden md:flex md:flex-row pt-1 pb-1 pl-0.5 bg-orange-300 w-full justify-start"
+                id="menu"
+              >
+                <li class="flex justify-end md:hidden z-90 top-4">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-right text-black text-2xl"
+                    id="closeBtn"
+                    >&times;</a
+                  >
+                </li>
+
+                <li class="link">
+                  <a href="#" class="text-subtitleclamp sm:text-lg">About Us</a>
+                </li>
+                <li class="link relative group">
+                  <a href="#" class="text-subtitleclamp sm:text-lg"
+                    >Calendar/Events</a
+                  >
+                  <button class="shrink-0 p-1">
+                    <span class="sr-only"
+                      >Show submenu for "Calendar/Events"</span
                     >
-                  </li>
-                  <li class="link relative group">
-                    <a href="#" class="text-subtitleclamp sm:text-2xl"
-                      >Calendar/Events</a
+                    <svg
+                      class="w-3 h-3 fill-slate-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
                     >
-                    <button class="shrink-0 p-1">
-                      <span class="sr-only"
-                        >Show submenu for "Calendar/Events"</span
+                      <path d="M10 2.586 11.414 4 6 9.414.586 4 2 2.586l4 4z" />
+                    </svg>
+                  </button>
+                  <!--2nd level menu-->
+                  <ul
+                    class="absolute invisible group-hover:visible py-1 text-sm -ml-3.5 w-auto"
+                    aria-labelledby="dropdownHoverButton"
+                  >
+                    <li class="link">
+                      <a href="#" class="subLink"> - Pathshala Calendar</a>
+                    </li>
+                    <li class="link">
+                      <a href="#" class="subLink"> - Pathshala Events</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="link">
+                  <a href="#" class="text-subtitleclamp sm:text-lg"
+                    >Activities</a
+                  >
+                </li>
+                <li class="link">
+                  <a href="#" class="text-subtitleclamp sm:text-lg"
+                    >Registration</a
+                  >
+                </li>
+                <li class="link">
+                  <a href="#" class="text-subtitleclamp sm:text-lg">Teachers</a>
+                </li>
+                <li class="link">
+                  <a href="#" class="text-subtitleclamp sm:text-lg">Snacks</a>
+                </li>
+                <li class="link relative group">
+                  <a href="#" class="text-subtitleclamp sm:text-lg"
+                    >Video/Photo Gallary</a
+                  >
+                  <button class="shrink-0 p-1">
+                    <span class="sr-only"
+                      >Show submenu for "Video/Photo Gallary"</span
+                    >
+                    <svg
+                      class="w-3 h-3 fill-slate-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                    >
+                      <path d="M10 2.586 11.414 4 6 9.414.586 4 2 2.586l4 4z" />
+                    </svg>
+                  </button>
+                  <ul
+                    class="absolute invisible group-hover:visible py-1 text-sm -ml-3.5 w-auto"
+                    aria-labelledby="dropdownHoverButton"
+                  >
+                    <li class="link">
+                      <a href="#" class="subLink"> - Swadhyay Videos</a>
+                    </li>
+                    <li class="link">
+                      <a href="#" class="subLink"> - Photo Gallery</a>
+                    </li>
+                    <li class="link">
+                      <a href="#" class="subLink">
+                        - Videos of 2011 Mahavir Jayanti Celebrations</a
                       >
-                      <svg
-                        class="w-3 h-3 fill-slate-500"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
+                    </li>
+                    <li class="link">
+                      <a href="#" class="subLink">
+                        - Videos of 2012 Mahavir Jayanti Celebrations</a
                       >
-                        <path
-                          d="M10 2.586 11.414 4 6 9.414.586 4 2 2.586l4 4z"
-                        />
-                      </svg>
-                    </button>
-                    <!--2nd level menu-->
-                    <ul
-                      class="absolute invisible group-hover:visible py-1 text-sm -ml-3.5 w-40"
-                      aria-labelledby="dropdownHoverButton"
-                    >
-                      <li class="link">
-                        <a href="#" class="subLink"> - Pathshala Calendar</a>
-                      </li>
-                      <li class="link">
-                        <a href="#" class="subLink"> - Pathshala Events</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="link">
-                    <a href="#" class="text-subtitleclamp sm:text-2xl"
-                      >Activities</a
-                    >
-                  </li>
-                  <li class="link">
-                    <a href="#" class="text-subtitleclamp sm:text-2xl"
-                      >Registration</a
-                    >
-                  </li>
-                  <li class="link">
-                    <a href="#" class="text-subtitleclamp sm:text-2xl"
-                      >Teachers</a
-                    >
-                  </li>
-                  <li class="link">
-                    <a href="#" class="text-subtitleclamp sm:text-2xl"
-                      >Snacks</a
-                    >
-                  </li>
-                  <li class="link relative group">
-                    <a href="#" class="text-subtitleclamp sm:text-2xl"
-                      >Video/Photo Gallary</a
-                    >
-                    <button class="shrink-0 p-1">
-                      <span class="sr-only"
-                        >Show submenu for "Video/Photo Gallary"</span
+                    </li>
+                    <li class="link">
+                      <a href="#" class="subLink">
+                        - Videos of 2013 Mahavir Jayanti Celebrations</a
                       >
-                      <svg
-                        class="w-3 h-3 fill-slate-500"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                      >
-                        <path
-                          d="M10 2.586 11.414 4 6 9.414.586 4 2 2.586l4 4z"
-                        />
-                      </svg>
-                    </button>
-                    <ul
-                      class="absolute invisible group-hover:visible py-1 text-sm -ml-3.5 w-50"
-                      aria-labelledby="dropdownHoverButton"
-                    >
-                      <li class="link">
-                        <a href="#" class="subLink"> - Swadhyay Videos</a>
-                      </li>
-                      <li class="link">
-                        <a href="#" class="subLink"> - Photo Gallery</a>
-                      </li>
-                      <li class="link">
-                        <a href="#" class="subLink">
-                          - Videos of 2011 Mahavir Jayanti Celebrations</a
-                        >
-                      </li>
-                      <li class="link">
-                        <a href="#" class="subLink">
-                          - Videos of 2012 Mahavir Jayanti Celebrations</a
-                        >
-                      </li>
-                      <li class="link">
-                        <a href="#" class="subLink">
-                          - Videos of 2013 Mahavir Jayanti Celebrations</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="link">
-                    <a href="#" class="text-subtitleclamp sm:text-2xl"
-                      >Sutra Audios</a
-                    >
-                  </li>
-                  <li class="link">
-                    <a href="#" class="text-subtitleclamp sm:text-2xl"
-                      >Useful Links</a
-                    >
-                  </li>
-                  <li class="link">
-                    <a href="#" class="text-subtitleclamp sm:text-2xl"
-                      >Contact Us</a
-                    >
-                  </li>
-                  <li class="link">
-                    <a href="#" class="text-subtitleclamp sm:text-2xl">RSVP</a>
-                  </li>
-                </ul>
-              </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="link">
+                  <a href="#" class="text-subtitleclamp sm:text-lg"
+                    >Sutra Audios</a
+                  >
+                </li>
+                <li class="link">
+                  <a href="#" class="text-subtitleclamp sm:text-lg"
+                    >Useful Links</a
+                  >
+                </li>
+                <li class="link">
+                  <a href="#" class="text-subtitleclamp sm:text-lg"
+                    >Contact Us</a
+                  >
+                </li>
+                <li class="link">
+                  <a href="#" class="text-subtitleclamp sm:text-lg">RSVP</a>
+                </li>
+              </ul>
+              <!-- </div> -->
             </div>
           </div>
         </div>
       </nav>
-      <main
-        class="sm:max-w-screen-xl md:max-w-screen-xl pl-12 pt-0 pb-0 ml-8 mb-8 px-4"
-      >
+      <main class="flex flex-col pl-12 pt-0 pb-0 ml-8 mb-8 px-4">
         <!-- <div class="sm:max-w-screen-xl md:max-w-screen-xl mb-2"> -->
         <div id="ja-marquee">
           <marquee
@@ -270,5 +285,6 @@
         <span id="lblWebMaster">Webmaster: Jignesh Kothari</span>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

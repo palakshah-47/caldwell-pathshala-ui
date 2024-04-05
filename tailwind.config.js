@@ -25,7 +25,7 @@ module.exports = {
         ],
       },
       fontSize: {
-        titleclamp: 'clamp(1rem, 1.5vw, 5rem)',
+        titleclamp: 'clamp(1.5rem, 1.5vw, 5rem)',
         subtitleclamp: 'clamp(1rem, 0.5vw, 5rem)',
       },
       fontColor: {
@@ -35,7 +35,7 @@ module.exports = {
         body: '#496077',
         link: '#FF9900',
       },
-      screens: { sm: { max: '768px' } },
+      screens: { sm: { max: '340px' } },
       variants: {
         display: ['group-hover'],
       },
